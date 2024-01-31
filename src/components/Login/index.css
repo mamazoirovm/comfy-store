@@ -1,0 +1,80 @@
+.card-items{
+    --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / .1), 0 4px 6px -4px rgb(0 0 0 / .1);
+    --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),var(--tw-ring-shadow, 0 0 #0000),var(--tw-shadow);
+    width: 350px;
+    height: 510px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 50px;
+    border-radius: 20px;
+    margin: 0 auto;
+    padding: 30px;
+    text-align: center;
+}
+.card-items h1 {
+    color: #394e6a;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 22px;
+}
+.card-items p {
+    font-size: 16px;
+    color: #394e6a;
+}
+.reg{
+    text-decoration: none;
+    color: #057aff;
+}
+.reg:hover{
+    text-decoration: underline;
+}
+.input-gr{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.input-gr label{
+    font-size: 14px;
+    color: #394e6a;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.input-gr input{
+    width: 100%;
+    padding: 16px;
+    border-radius: 8px;
+    border-width: 1px;
+    margin-bottom: 20px;
+}
+
+.btn-gr{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+   
+}
+.btn{
+    width: 100%;
+    padding: 16px;
+    border-radius: 8px;
+    border-width: 1px;
+    border: none;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+    cursor: pointer;
+}
+.log{
+    color: #dbe1ff;
+    background-color: #057aff;
+}
+.gue{
+    color: #dbd4ed;
+    background-color: #463aa1;
+}
+.login-top{
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 80px;
+}

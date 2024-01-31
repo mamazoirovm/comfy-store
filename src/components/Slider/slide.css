@@ -1,0 +1,15 @@
+.slides{
+    width: 490px;
+    height: 448px;
+    background-color: black;
+   padding-left: 40px;
+    padding-top: 20px;
+    border-radius: 20px;
+}
+img{
+    width: 400px !important;
+    height: 400px !important;
+    border-radius: 20px;
+   
+}
+

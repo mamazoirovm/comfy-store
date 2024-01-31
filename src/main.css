@@ -1,0 +1,171 @@
+
+.black .top {
+  background-color: #414558;
+}
+.black .hero {
+  background-color: #181920;
+}
+.black .links {
+  color: #f8f8e5;
+}
+.black .logo-div{
+    background-color: #ff7ac6;
+    color: #181920;
+}
+.black .aktiv {
+  background-color: #414558;
+  color: #abcbdb;
+}
+.black .aktiv:hover {
+  background-color: #272935 !important;
+  color: #abcbdb !important;
+}
+.black .links:hover {
+  background-color: #272935;
+}
+.black .fa-moon{
+    color: #fff;
+}
+.black .fa-cart-shopping{
+    color: #fff;
+}
+.black .wrapper{
+    background-color: #272935 ;
+}
+.black .login-top{
+    background-color: coral;
+    background-color: #272935 ;
+}
+.black .card-items{
+    background-color: #272935;
+    color: #fff ;
+}
+.black .register-items h1{
+    color: #fff;
+}
+.black .input-gr label{
+    color: #f8f8f2;
+}
+.black .input-gr input{
+    color: #f8f8f2;
+    background-color: #272935;
+    border: 1px solid #414558;
+}
+.black .card-items p{
+    color: #f8f8f2;
+}
+.black .log{
+    background-color: #ff7ac6;
+    color: #181920;
+    font-weight: 600;
+}
+.black .reg{
+    color: #ff7ac6;
+}
+.black .txt h1 {
+    color: #f8f8f2 ;
+    font-weight: 700;
+}
+.black .txt h2 {
+  color: #f8f8f2 ;
+}
+.black .txt p {
+    color: #f8f8f2 ;
+}
+.black .txt .our {
+    color: #414558 ;
+    background-color: #ff7ac6;
+}
+.black .login-top{
+    background-color: #272935;
+    color: #f8f8f2;
+}
+.black .login-top h1{
+    color: #f8f8f2;
+}
+.black .about{
+    background-color: #272935;
+}
+.black .about-items h1 {
+    color: #f8f8f2;
+}
+.black .about-items p {
+    color: #f8f8f2;
+}
+.black .about-items span {
+    color: #301c27;
+    background-color: #ff7ac6;
+}
+.black .cards{
+    background-color: #272935;
+}
+.black .search{
+    background-color: #181920;
+}
+.black label{
+    color: #f8f8f2;
+}
+.black .reset{
+    color: #301c27;
+    background-color: #EBAA63;
+}
+.black .qidir{
+    color: #301c27;
+    background-color: #ff7ac6;
+}
+.black  input[type="range"] {
+   background-color: #ff7ac6;
+  }
+  .black .number h4{
+    color: #f8f8f2;
+  }
+  .black .fa-grip{
+    color: #f8f8f2;
+  }
+  .black .fa-bars{
+    background-color: #ff7ac6;
+    color: #301c27;
+  }
+  .black .number i:hover{
+    background-color: #3f4142;
+    
+  }
+  .black .hr{
+    color: #f8f8f2;
+  }
+  .black .list-card{
+    background-color: #272935;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  }
+  .black select{
+    background-color: #272935;
+    color: #f8f8f2;
+    border: 1px solid #414558;
+  }
+  .black .inputs{
+    background-color: #272935;
+    outline-color: #000000;
+    border: 1px solid #414558;
+    color: #f8f8f2;
+  }
+  .black .list-card h2{
+    color: #f8f8f2;
+  }
+  .black h6{
+    color: #A195F9;
+  }
+  .black .detal{
+    background-color: #272935;
+    color: #f8f8f2;
+  }
+  .black .data-text{
+    color: #f8f8f2;
+  }
+  .black .hm-links{
+    color: #f8f8f2;
+  }
+  /* .black .data-text button{
+    color: #3f4142;
+    background-color: #A195F9;
+    cursor: pointer;
+  } */
