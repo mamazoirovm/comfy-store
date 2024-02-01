@@ -10,18 +10,17 @@ function Navbar() {
   const [savedItems, setSavedItems] = useState({});
 
   useEffect(() => {
-    if (localStorage.getItem("user")) {
-      setPerson(JSON.parse(localStorage.getItem("user")));
+    const user = localStorage.getItem("user");
+    if (user) {
+      try {
+        setPerson(JSON.parse(user));
+      } catch (error) {
+        console.error("Error parsing user data from localStorage:", error);
+      }
     }
   }, []);
-  useEffect(() => {
-    const item = JSON.parse(localStorage.getItem("item"));
-    if (item) {
-      setSavedItems(item);
-    } else {
-      setSavedItems({});
-    }
-  }, []);
+  console.log(person);
+ 
 
   const handleLogOut = () => {
     document.cookie = "token=";
@@ -99,7 +98,7 @@ function Navbar() {
                     >
                       Cart
                     </Link>
-                    {person.username && (
+                    {!person.username && (
                       <Link
                         className={`links${
                           location.pathname === "/checkout" ? " aktiv" : ""

@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from "react";
 import "./index.css";
+import { useNavigate } from "react-router-dom";
 
 const Card = () => {
   const [savedItems, setSavedItems] = useState({});
   const [selectedNumber, setSelectedNumber] = useState(1);
+  const [person, setPerson] = useState({});
+  const navigate = useNavigate()
 
   useEffect(() => {
     const item = JSON.parse(localStorage.getItem("item"));
@@ -19,17 +22,25 @@ const Card = () => {
     setSavedItems({});
   };
   const handleAdded = (event) => {
-    setSelectedNumber(parseInt(event.target.value) );
+    setSelectedNumber(parseInt(event.target.value));
   };
-console.log(selectedNumber);
+  function handleSelection(e) {
+    e.preventDefault();
+    if (person.username && Object.keys(savedItems).length > 0) {
+      navigate('/login');
+    } else {
+      navigate('/checkout');
+    }
+  }
+  console.log(selectedNumber);
   return (
     <div>
       <div className="container">
         {Object.keys(savedItems).length === 0 ? (
           <div className="txt mb-10">
-          <h2>Your Cart Is Empty</h2>
-          <hr />
-        </div>
+            <h2>Your Cart Is Empty</h2>
+            <hr />
+          </div>
         ) : (
           <>
             <div className="txt mb-10">
@@ -66,7 +77,7 @@ console.log(selectedNumber);
                   className="bg-slate-50 text-slate-900 rounded-3xl px-1 py-0"
                   name=""
                   id=""
-                  onChange={handleAdded}
+                
                 >
                   <option value="">1</option>
                   <option value="">2</option>
@@ -74,15 +85,18 @@ console.log(selectedNumber);
                   <option value="">4</option>
                   <option value="">5</option>
                 </select>
-                <button onClick={handleRemove} className="text-blue-700 font-semibold">
+                <button
+                  onClick={handleRemove}
+                  className="text-blue-700 font-semibold"
+                >
                   remove
                 </button>
               </div>
-              <h1>${(savedItems.prices * selectedNumber).toFixed(2)}</h1>
+              <h1>${(savedItems.prices / 100).toFixed(2)}</h1>
 
               <div className="flex fle-col gap-2 ">
                 <div className="flex flex-col gap-3 p-8"></div>
-                <button className=" text-xl text-slate-200 bg-blue-500 py-1 px-1 rounded-md uppercase">
+                <button onClick={handleSelection}  className=" text-xl text-slate-200 bg-blue-500 py-1 px-1 rounded-md uppercase">
                   please login
                 </button>
               </div>
