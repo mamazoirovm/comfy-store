@@ -6,6 +6,7 @@ import { useState, useEffect } from "react";
 import { Route, useNavigate } from "react-router-dom";
 import Detalis from "../Detalis/Detalis";
 import { data } from "autoprefixer";
+
 const Product = () => {
   const [price, setPrice] = useState(1000);
   const [searchTerm, setSearchTerm] = useState("");

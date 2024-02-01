@@ -10,11 +10,11 @@ import Register from "./components/Register/Register";
 import Detalis from "./components/Detalis/Detalis";
 import Order from "./components/Orders/Order";
 import ErrorPage from "./components/Errores/ErrorPage";
+import CheckOut from "./components/Check/CheckOut";
 import "./App.css";
 
 import { ThemeProvider } from "./components/ThemeContext";
 import Navbar from "./components/Navbar/Navbar";
-
 
 function App() {
   const [person, setPerson] = useState({});
@@ -33,9 +33,10 @@ function App() {
           <Route path="/product" element={<Product />}></Route>
           <Route path="/about" element={<About />}></Route>
           <Route path="/card" element={<Card />}></Route>
-          {person.username && (
-            <Route path="/orders" element={<Order />}></Route>
-          )}
+
+          <Route path="/orders" element={<Order />}></Route>
+          <Route path="/checkout" element={<CheckOut />}></Route>
+
           <Route path="*" element={<ErrorPage />}></Route>
 
           <Route path="/login" element={<Login />}></Route>

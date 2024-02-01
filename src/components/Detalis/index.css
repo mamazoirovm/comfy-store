@@ -17,18 +17,23 @@
 .data-base{
     display: flex;
     align-items: center;
-    gap: 50px;
+    justify-content: space-between;
+  
 }
 .img-cont{
-    width: 712px !important;
+    display: block;
+    width: 1850px !important;
     height: 384px !important;
     border-radius: 20px !important;
 }
-
-.data-text{
-    display: flex;
-    align-items: left;
-    flex-direction: column;
+select{
+    display: block;
+    color: #000000 !important;
+    border: 1px solid black;
+   
+}
+option{
+    color: black !important;
 }
 
 .data-text h5{
@@ -37,7 +42,7 @@
 .data-text p{
     margin-top: 25px;
 }
-/* .data-text button{
+.data-text button{
     padding: 16px;
     border: none;
     font-size: 16px;
@@ -46,7 +51,10 @@
     background-color: #463aa1;
     border-radius: 15px;
     cursor: pointer;
-} */
+    width: 125px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
 .data-text select{
     width: 320px;
     height: 35px;

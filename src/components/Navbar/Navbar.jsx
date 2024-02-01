@@ -7,10 +7,19 @@ function Navbar() {
   const location = useLocation();
   const { darkMode, toggleDarkMode } = useTheme();
   const [person, setPerson] = useState({});
+  const [savedItems, setSavedItems] = useState({});
 
   useEffect(() => {
     if (localStorage.getItem("user")) {
       setPerson(JSON.parse(localStorage.getItem("user")));
+    }
+  }, []);
+  useEffect(() => {
+    const item = JSON.parse(localStorage.getItem("item"));
+    if (item) {
+      setSavedItems(item);
+    } else {
+      setSavedItems({});
     }
   }, []);
 
@@ -90,6 +99,16 @@ function Navbar() {
                     >
                       Cart
                     </Link>
+                    {person.username && (
+                      <Link
+                        className={`links${
+                          location.pathname === "/checkout" ? " aktiv" : ""
+                        }`}
+                        to="/checkout"
+                      >
+                        Checkout
+                      </Link>
+                    )}
                     {person.username && (
                       <Link
                         className={`links${

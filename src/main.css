@@ -103,7 +103,7 @@
     background-color: #181920;
 }
 .black label{
-    color: #f8f8f2;
+    color: #f8f8f2 !important;
 }
 .black .reset{
     color: #301c27;
